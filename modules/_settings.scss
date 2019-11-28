@@ -4,7 +4,7 @@
     margin: auto;
     height: 85%;
     max-width: 1000px !important;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    box-shadow: var(--elevation-low) !important;
 }
 
 .layer-3QrUeG.stop-animations + .layer-3QrUeG .standardSidebarView-3F1I7i {
@@ -13,16 +13,14 @@
 }
 
 .layer-3QrUeG {
-    background: transparent;
+    background: rgba(#000000, 0.6);
     opacity: 1 !important;
     transform: scale(1) !important;
 }
 .layer-3QrUeG.stop-animations + .layer-3QrUeG {
-    animation: backBlur 200ms;
+    animation: backBlur 150ms;
     backdrop-filter: blur(5px);
-    -webkit-box-shadow: inset 0px 0px 85px rgba(0, 0, 0, 0.4);
-    -moz-box-shadow: inset 0px 0px 85px rgba(0, 0, 0, 0.4);
-    box-shadow: inset 0px 0px 85px rgba(0, 0, 0, 0.4);
+    box-shadow: inset 0px 0px 25px rgba(0, 0, 0, 0.2);
 }
 
 @keyframes modalScaleUP {
@@ -55,6 +53,27 @@
 
     100% {
         backdrop-filter: blur(5px);
-        box-shadow: inset 0px 0px 85px rgba(0, 0, 0, 0.4);
+        box-shadow: inset 0px 0px 25px rgba(0, 0, 0, 0.2);
     }
+}
+
+// Shoutout GhostlyDilemma (emma) for help
+// Check out Customa https://github.com/Customa/Customa-Discord
+.userInfoViewing-16kqK3
+    .flexChild-faoVW3
+    > div:nth-child(2)
+    .viewBody-2Qz-jg.selectable-x8iAUj,
+.selectClosed-2un0PJ .paymentSourceLabel-1lo4Ca,
+.paymentSourceRow-3FbcL_ .descriptionWrapper-1YBY_J {
+    filter: blur(5px);
+    transition: 100ms;
+}
+
+.userInfoViewing-16kqK3
+    .flexChild-faoVW3
+    > div:nth-child(2)
+    .viewBody-2Qz-jg.selectable-x8iAUj:hover,
+.selectClosed-2un0PJ .paymentSourceLabel-1lo4Ca:hover,
+.paymentSourceRow-3FbcL_ .descriptionWrapper-1YBY_J:hover {
+    filter: none;
 }
