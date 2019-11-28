@@ -1,3 +1,24 @@
 .backdrop-1wrmKB {
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(5px);
+}
+
+// User Popout on Click
+.userPopout-3XzG_A {
+    background-color: transparent;
+    backdrop-filter: blur(25px);
+
+    .headerNormal-T_seeN {
+        background-color: rgba(#121212, 0.2);
+    }
+    .headerSpotify-zpWxgT {
+        background: rgba(#1db954, 0.5);
+    }
+
+    .headerPlaying-j0WQBV {
+        background: rgba(#7289da, 0.5);
+    }
+
+    .bodyInner-245q0L {
+        background-color: transparent;
+    }
 }
