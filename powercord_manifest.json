@@ -1,0 +1,8 @@
+{
+    "name": "Dark Theme But Good",
+    "version": "0.0.1",
+    "author": "NurMarvin",
+    "license": "MIT",
+    "theme": "theme.scss",
+    "description": "It's dark theme but it's hot as fuck"
+}
