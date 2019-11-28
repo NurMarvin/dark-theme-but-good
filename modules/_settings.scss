@@ -1,18 +1,19 @@
 .layer-3QrUeG .standardSidebarView-3F1I7i {
-    animation: modalScaleDOWN 200ms;
+    animation: modalScaleDOWN 150ms;
     opacity: 0;
     margin: auto;
     height: 85%;
     max-width: 1000px !important;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 .layer-3QrUeG.stop-animations + .layer-3QrUeG .standardSidebarView-3F1I7i {
-    animation: modalScaleUP 200ms;
+    animation: modalScaleUP 150ms;
     opacity: 1;
 }
 
 .layer-3QrUeG {
-    background: none;
+    background: transparent;
     opacity: 1 !important;
     transform: scale(1) !important;
 }
@@ -49,12 +50,11 @@
 @keyframes backBlur {
     0% {
         backdrop-filter: none;
+        box-shadow: none;
     }
 
     100% {
         backdrop-filter: blur(5px);
-        -webkit-box-shadow: inset 0px 0px 85px rgba(0, 0, 0, 0.4);
-        -moz-box-shadow: inset 0px 0px 85px rgba(0, 0, 0, 0.4);
         box-shadow: inset 0px 0px 85px rgba(0, 0, 0, 0.4);
     }
 }
