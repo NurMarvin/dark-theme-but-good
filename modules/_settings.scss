@@ -1,0 +1,55 @@
+.layer-3QrUeG .standardSidebarView-3F1I7i {
+    animation: modalScaleDOWN 200ms;
+    opacity: 0;
+    margin: auto;
+    height: 85%;
+    max-width: 1000px !important;
+}
+
+.layer-3QrUeG.stop-animations + .layer-3QrUeG .standardSidebarView-3F1I7i {
+    animation: modalScaleUP 300ms;
+    opacity: 1;
+}
+
+.layer-3QrUeG {
+    background: none;
+    opacity: 1 !important;
+    transform: scale(1) !important;
+}
+.layer-3QrUeG.stop-animations + .layer-3QrUeG {
+    animation: backBlur 300ms;
+    backdrop-filter: blur(5px);
+    border: thick;
+}
+
+@keyframes modalScaleUP {
+    0% {
+        transform: scale(0.4);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes modalScaleDOWN {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0.4);
+        opacity: 0;
+    }
+}
+
+@keyframes backBlur {
+    0% {
+        backdrop-filter: none;
+    }
+
+    100% {
+        backdrop-filter: blur(5px);
+    }
+}
