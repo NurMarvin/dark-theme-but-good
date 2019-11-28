@@ -9,16 +9,35 @@
 
     .headerNormal-T_seeN {
         background-color: rgba(#121212, 0.2);
+
+        .headerTop-3C2Zn0 {
+            background: none;
+        }
     }
     .headerSpotify-zpWxgT {
         background: rgba(#1db954, 0.5);
+
+        .headerTop-3C2Zn0 {
+            background: none;
+        }
     }
 
     .headerPlaying-j0WQBV {
         background: rgba(#7289da, 0.5);
+
+        .headerTop-3C2Zn0 {
+            background: none;
+        }
     }
 
-    .bodyInner-245q0L {
+    .bodyInner-245q0L,
+    .footer-1fjuF6 {
         background-color: transparent;
+
+        .quickMessage-2XpSaN,
+        .quickMessage-1yeL4E {
+            background-color: rgba(#121212, 0.2);
+            border-color: rgba(#000000, 0.6);
+        }
     }
 }
