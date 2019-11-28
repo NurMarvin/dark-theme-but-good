@@ -1,29 +1,29 @@
 .preview-2nSL_2
-  + .marginTop40-i-78cZ
-  .radioGroup-1GBvlr
-  > :last-child
-  .checkboxWrapper-SkhIWG,
+    + .marginTop40-i-78cZ
+    .radioGroup-1GBvlr
+    > :last-child
+    .checkboxWrapper-SkhIWG,
 .preview-2nSL_2
-  + .marginTop40-i-78cZ
-  .radioGroup-1GBvlr
-  > :last-child
-  .info-3LOr12 {
-  visibility: hidden;
+    + .marginTop40-i-78cZ
+    .radioGroup-1GBvlr
+    > :last-child
+    .info-3LOr12 {
+    visibility: hidden;
 }
 
 .preview-2nSL_2 + .marginTop40-i-78cZ .radioGroup-1GBvlr > :last-child {
-  background-color: none !important;
-  pointer-events: none !important;
+    background-color: none !important;
+    pointer-events: none !important;
 }
 
 .preview-2nSL_2
-  + .marginTop40-i-78cZ
-  .radioGroup-1GBvlr
-  > :last-child
-  .info-3LOr12::before {
-  visibility: visible !important;
-  content: "This Theme doesn't support Light Mode (Select Dark Mode instead)";
-  position: absolute !important;
-  top: 15px;
-  left: 12px;
+    + .marginTop40-i-78cZ
+    .radioGroup-1GBvlr
+    > :last-child
+    .info-3LOr12::before {
+    visibility: visible !important;
+    content: "This Theme doesn't support Light Mode ( Select Dark Mode instead)";
+    position: absolute !important;
+    top: 15px;
+    left: 12px;
 }
