@@ -1,7 +1,8 @@
 {
-    "arrowParens": "always",
     "bracketSpacing": true,
     "endOfLine": "crlf",
+    "parser": "scss",
+    "quoteProps": "as-needed",
     "semi": true,
     "singleQuote": true,
     "tabWidth": 4,
