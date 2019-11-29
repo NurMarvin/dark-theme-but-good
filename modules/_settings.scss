@@ -1,17 +1,22 @@
+// JustMrRobBoss#1514 added the roundness bruh
+:root
+{
+    --roundness: 25px;
+}
 .layer-3QrUeG .standardSidebarView-3F1I7i {
     animation: modalScaleDOWN 150ms;
     opacity: 0;
     margin: auto;
     height: 85%;
     max-width: 1000px !important;
-    box-shadow: var(--elevation-low) !important;
+    box-shadow: var(--elevation-high) !important;
+    background: none;
+    border-radius: var(--roundness);
 }
-
 .layer-3QrUeG.stop-animations + .layer-3QrUeG .standardSidebarView-3F1I7i {
     animation: modalScaleUP 150ms;
     opacity: 1;
 }
-
 .layer-3QrUeG {
     background: rgba(#000000, 0.6);
     opacity: 1 !important;
@@ -22,7 +27,15 @@
     backdrop-filter: blur(5px);
     box-shadow: inset 0px 0px 25px rgba(0, 0, 0, 0.2);
 }
-
+.contentRegion-3nDuYy {
+    border-radius: var(--roundness) !important;
+}
+.contentRegionScroller-26nc1e{
+    border-radius: 0 var(--roundness) var(--roundness) 0 !important;
+}
+.sidebarRegionScroller-3MXcoP{
+    border-radius: var(--roundness) 0 0 var(--roundness) !important;
+}
 @keyframes modalScaleUP {
     0% {
         transform: scale(0.4);
@@ -56,7 +69,6 @@
         box-shadow: inset 0px 0px 25px rgba(0, 0, 0, 0.2);
     }
 }
-
 // Shoutout GhostlyDilemma (emma) for help
 // Check out Customa https://github.com/Customa/Customa-Discord
 .userInfoViewing-16kqK3
