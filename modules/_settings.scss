@@ -3,7 +3,7 @@
     --roundness: 25px;
 }
 .layer-3QrUeG .standardSidebarView-3F1I7i {
-    animation: modalScaleDOWN 150ms;
+    animation: closeSettings 150ms;
     opacity: 0;
     margin: auto;
     height: 85%;
@@ -13,7 +13,7 @@
     border-radius: var(--roundness);
 }
 .layer-3QrUeG.stop-animations + .layer-3QrUeG .standardSidebarView-3F1I7i {
-    animation: modalScaleUP 150ms;
+    animation: openSettings 150ms;
     opacity: 1;
 }
 .layer-3QrUeG {
@@ -23,7 +23,7 @@
 }
 .layer-3QrUeG.stop-animations + .layer-3QrUeG {
     animation: backBlur 150ms;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(15px);
 }
 .contentRegion-3nDuYy {
     border-radius: var(--roundness) !important;
@@ -34,9 +34,9 @@
 .sidebarRegionScroller-3MXcoP {
     border-radius: var(--roundness) 0 0 var(--roundness) !important;
 }
-@keyframes modalScaleUP {
+@keyframes openSettings {
     0% {
-        transform: scale(0.4);
+        transform: scale(0.9);
         opacity: 0;
     }
     100% {
@@ -45,13 +45,13 @@
     }
 }
 
-@keyframes modalScaleDOWN {
+@keyframes closeSettings {
     0% {
         transform: scale(1);
         opacity: 1;
     }
     100% {
-        transform: scale(0.4);
+        transform: scale(0.9);
         opacity: 0;
     }
 }
