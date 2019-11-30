@@ -3,8 +3,9 @@
 }
 
 // User Popout on Click
-.userPopout-3XzG_A {
-    background-color: transparent;
+.userPopout-3XzG_A,
+.popoutRight-1veHKi.noArrow-2foL9g {
+    background-color: inherit;
     backdrop-filter: blur(25px);
 
     .headerNormal-T_seeN {
@@ -33,6 +34,7 @@
     .bodyInner-245q0L,
     .footer-1fjuF6 {
         background-color: transparent;
+        backdrop-filter: blur(25px);
 
         .quickMessage-2XpSaN,
         .quickMessage-1yeL4E {
